@@ -1,4 +1,4 @@
-module X1.X1Main where
+module X1.X1Main (x1main) where
 import X1.SortAndDistance ( distanceList, similiar, sortAcc )
 import X1.FormatList ( transformList )
 import Utils.Structures (mapTuple)

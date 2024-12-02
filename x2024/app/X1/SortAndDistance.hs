@@ -1,4 +1,4 @@
-module X1.SortAndDistance where
+module X1.SortAndDistance ( distanceList, similiar, sortAcc ) where
 
 import Data.List (sortOn)
 import Data.Ord (Down(Down))

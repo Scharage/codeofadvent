@@ -1,4 +1,4 @@
-module Utils.InputFormat where
+module Utils.InputFormat (toNum,lineToNums,readNumsInLine) where
 
 toNum :: String -> Int
 toNum x = read x :: Int

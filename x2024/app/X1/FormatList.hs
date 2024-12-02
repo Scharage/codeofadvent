@@ -1,4 +1,4 @@
-module X1.FormatList where
+module X1.FormatList ( transformList ) where
 
 splitEachSecond :: [(Int,Int)]->([Int] ,[Int])
 splitEachSecond xs = ([n | (n,i) <- xs, even i], [n | (n,i) <- xs, odd i])
