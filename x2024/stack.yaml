@@ -34,7 +34,9 @@ packages:
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
-# extra-deps:
+extra-deps:
+    - regex-tdfa-1.3.2
+    - regex-base-0.94.0.2@sha256:0322b2fcd1358f3355e0c8608efa60d27b14d1c9d476451dbcb9181363bd8b27,2601
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a

@@ -1,7 +1,10 @@
-module Utils.Structures (mapTuple, count, skipIndex, permutationsOfSkips) where
+module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips) where
 
 mapTuple :: (t -> b) -> (t, t) -> (b, b)
 mapTuple f (x1,x2)= (f x1, f x2)
+
+combine :: (a -> b -> c) -> (a,b) -> c
+combine f (a,b) = f a b
 
 count   :: Eq a => a -> [a] -> Int
 count x =  length . filter (==x)
