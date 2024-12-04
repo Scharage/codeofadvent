@@ -52,6 +52,9 @@ executable x2024-exe
       X2.X2Main
       X3.RegexSolver
       X3.X3Main
+      X4.Depcrecated
+      X4.X4Main
+      X4.XMasSearcher
       Paths_x2024
   autogen-modules:
       Paths_x2024
