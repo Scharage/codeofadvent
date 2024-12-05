@@ -1,4 +1,4 @@
-module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree) where
+module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList) where
 import Data.List (transpose)
 
 mapTuple :: (t -> b) -> (t, t) -> (b, b)
@@ -35,3 +35,11 @@ turn90degree = transpose . map reverse
 
 matrixToAllPossibleRows :: [[a]] -> [[a]]
 matrixToAllPossibleRows xs = xs ++ rowsToColumns xs ++ diagonals xs ++ diagonals (turn90degree xs)
+
+
+middleOfList:: [a] -> Maybe a
+middleOfList [x] = Just x
+middleOfList [_,x,_] = Just x
+middleOfList [_,_] = Nothing
+middleOfList (_:rs) = middleOfList (init rs)
+middleOfList [] = Nothing

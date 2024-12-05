@@ -18,4 +18,11 @@ packages:
       size: 531
   original:
     hackage: regex-base-0.94.0.2@sha256:0322b2fcd1358f3355e0c8608efa60d27b14d1c9d476451dbcb9181363bd8b27,2601
+- completed:
+    hackage: split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
+    pantry-tree:
+      sha256: 5d28c851a2c98e3d8ac0f01adc58303d775afe39dce23ec953be64ae65d11166
+      size: 443
+  original:
+    hackage: split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
 snapshots: []
