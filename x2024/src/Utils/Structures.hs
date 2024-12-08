@@ -1,5 +1,13 @@
-module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList) where
+module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList,Coords(Coords)) where
 import Data.List (transpose)
+
+data Coords = Coords {xcoord::Int,ycoord::Int} deriving (Show,Eq)
+instance Ord Coords where
+    compare x y = compare (coordsToTuple x) (coordsToTuple y)
+
+
+coordsToTuple::Coords -> (Int,Int)
+coordsToTuple (Coords x y) = (x,y)
 
 mapTuple :: (t -> b) -> (t, t) -> (b, b)
 mapTuple f (x1,x2)= (f x1, f x2)

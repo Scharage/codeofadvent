@@ -24,6 +24,7 @@ dependencies:
     - regex-tdfa
     - split
     - time
+    - containers
 
 ghc-options:
     - -Wall

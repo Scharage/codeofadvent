@@ -40,6 +40,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , containers
     , regex-tdfa
     , split
     , time
@@ -60,6 +61,8 @@ executable x2024-exe
       X4.XMasSearcher
       X5.X5Main
       X5.X5Printer
+      X6.X6Main
+      X6.X6Pathing
       Paths_x2024
   autogen-modules:
       Paths_x2024
@@ -68,6 +71,7 @@ executable x2024-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , regex-tdfa
     , split
     , time
@@ -86,6 +90,7 @@ test-suite x2024-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , regex-tdfa
     , split
     , time
