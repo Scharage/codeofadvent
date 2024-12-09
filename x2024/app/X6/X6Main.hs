@@ -1,6 +1,6 @@
 module X6.X6Main (x6main) where
 import Utils.InputFormat (readInputIntoMatrixMap)
-import X6.X6Pathing (coordsMapToGamePlan, startGame, countDistinctStep, startParadox, countDistinctParadox)
+import X6.X6Pathing (coordsMapToGamePlan, startGame, countDistinctStep, startParadox)
 
 
 x6main :: IO ()
@@ -9,7 +9,6 @@ x6main = do
     let gameplan = coordsMapToGamePlan (readInputIntoMatrixMap input)
     let resultplan = startGame gameplan
     let steps = countDistinctStep resultplan
-    let paradoxplan = startParadox gameplan
-    let paradoxes = countDistinctParadox paradoxplan
+    let paradoxes = startParadox gameplan -- Should be 1309? But not solved how to get to it yet
     print $ "Distinct Steps: " ++ show steps
     print $ "Distinct Paradoxes: " ++ show paradoxes

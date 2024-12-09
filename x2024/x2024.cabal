@@ -63,6 +63,10 @@ executable x2024-exe
       X5.X5Printer
       X6.X6Main
       X6.X6Pathing
+      X7.X7Main
+      X7.X7Operator
+      X8.X8Antenna
+      X8.X8Main
       Paths_x2024
   autogen-modules:
       Paths_x2024

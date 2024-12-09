@@ -1,5 +1,5 @@
-module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList,Coords(Coords)) where
-import Data.List (transpose)
+module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList,Coords(Coords),combinations) where
+import Data.List (transpose, subsequences)
 
 data Coords = Coords {xcoord::Int,ycoord::Int} deriving (Show,Eq)
 instance Ord Coords where
@@ -51,3 +51,6 @@ middleOfList [_,x,_] = Just x
 middleOfList [_,_] = Nothing
 middleOfList (_:rs) = middleOfList (init rs)
 middleOfList [] = Nothing
+
+combinations:: Int -> [a] -> [[a]]
+combinations len opt =sequence [opt| _ <- [0..(len-1)]]

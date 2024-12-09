@@ -1,9 +1,11 @@
-module Utils.InputFormat (toNum,lineToNums,readNumsInLine,readSections,readInputIntoMatrixMap) where
+module Utils.InputFormat (toNum,lineToNums,readNumsInLine,readSections,readInputIntoMatrixMap,readWordsAndLines) where
 import Data.List.Split (splitOn)
 import Utils.Structures (indexList, Coords(Coords))
 import qualified Data.Map.Lazy as Map
 
 
+readWordsAndLines:: String -> [[String]]
+readWordsAndLines s = map words $ lines s
 
 toNum :: String -> Int
 toNum x = read x :: Int
