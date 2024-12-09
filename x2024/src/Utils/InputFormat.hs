@@ -1,7 +1,8 @@
 module Utils.InputFormat (toNum,lineToNums,readNumsInLine,readSections,readInputIntoMatrixMap,readWordsAndLines) where
 import Data.List.Split (splitOn)
-import Utils.Structures (indexList, Coords(Coords))
+import Utils.Structures (indexList)
 import qualified Data.Map.Lazy as Map
+import Utils.Coords
 
 
 readWordsAndLines:: String -> [[String]]

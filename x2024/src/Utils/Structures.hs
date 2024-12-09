@@ -1,13 +1,9 @@
-module Utils.Structures (mapTuple, combine , count, skipIndex, permutationsOfSkips, indexList,matrixToAllPossibleRows,diagonals,rowsToColumns,turn90degree,middleOfList,Coords(Coords),combinations) where
-import Data.List (transpose, subsequences)
-
-data Coords = Coords {xcoord::Int,ycoord::Int} deriving (Show,Eq)
-instance Ord Coords where
-    compare x y = compare (coordsToTuple x) (coordsToTuple y)
+{-# OPTIONS_GHC -Wno-missing-export-lists #-}
+module Utils.Structures where
+import Data.List (transpose)
+import qualified Data.Set as Set
 
 
-coordsToTuple::Coords -> (Int,Int)
-coordsToTuple (Coords x y) = (x,y)
 
 mapTuple :: (t -> b) -> (t, t) -> (b, b)
 mapTuple f (x1,x2)= (f x1, f x2)
@@ -54,3 +50,10 @@ middleOfList [] = Nothing
 
 combinations:: Int -> [a] -> [[a]]
 combinations len opt =sequence [opt| _ <- [0..(len-1)]]
+
+doSet:: Ord a => [a] -> [a]
+doSet = Set.toList . Set.fromList
+
+isSingleton::[a] -> Bool
+isSingleton [_] = True
+isSingleton _ = False

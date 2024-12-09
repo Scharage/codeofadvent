@@ -9,9 +9,10 @@ import X5.X5Main (x5main)
 import X6.X6Main (x6main)
 import X7.X7Main (x7main)
 import Utils.Timing (timeMethod)
+import X8.X8Main (x8main)
 
 
 main :: IO ()
 main = do 
-    (_,diff) <- timeMethod x7main
+    (_,diff) <- timeMethod x8main
     print $ "Took time: " ++ show diff

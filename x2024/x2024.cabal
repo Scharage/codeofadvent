@@ -27,6 +27,7 @@ library
   exposed-modules:
       Lib
       Utils.BoolChecks
+      Utils.Coords
       Utils.InputFormat
       Utils.Math
       Utils.Structures

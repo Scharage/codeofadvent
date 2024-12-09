@@ -1,9 +1,8 @@
 module X6.X6Pathing(coordsMapToGamePlan,startGame,countDistinctStep,startParadox) where
 import qualified Data.Map.Lazy as Map
 import qualified Data.Set as Set
-import Utils.Structures (Coords(Coords))
 import Prelude hiding (Left,Right)
-import qualified Control.Applicative as Set
+import Utils.Coords
 
 data Player = UPlayer | DPlayer | LPlayer | RPlayer deriving (Show,Eq)
 data Direction = Up | Down | Left | Right deriving (Show,Eq)
