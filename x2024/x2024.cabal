@@ -68,6 +68,9 @@ executable x2024-exe
       X7.X7Operator
       X8.X8Antenna
       X8.X8Main
+      X9.X9BlockyDisk
+      X9.X9Disk
+      X9.X9Main
       Paths_x2024
   autogen-modules:
       Paths_x2024

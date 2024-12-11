@@ -1,4 +1,5 @@
-module Utils.InputFormat (toNum,lineToNums,readNumsInLine,readSections,readInputIntoMatrixMap,readWordsAndLines) where
+{-# OPTIONS_GHC -Wno-missing-export-lists #-}
+module Utils.InputFormat where
 import Data.List.Split (splitOn)
 import Utils.Structures (indexList)
 import qualified Data.Map.Lazy as Map
@@ -10,6 +11,9 @@ readWordsAndLines s = map words $ lines s
 
 toNum :: String -> Int
 toNum x = read x :: Int
+
+toDigit:: Char -> Int
+toDigit x = toNum [x]
 
 lineToNums:: String -> [Int]
 lineToNums s = map toNum (words s)
