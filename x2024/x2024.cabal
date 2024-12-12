@@ -55,6 +55,8 @@ executable x2024-exe
       X1.X1Main
       X10.X10Main
       X10.X10PathTrails
+      X11.X11Main
+      X11.X11Stones
       X2.ReportAnalysis
       X2.X2Main
       X3.RegexSolver
