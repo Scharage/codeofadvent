@@ -25,3 +25,15 @@ coordsToTuple (Coords x y) = (x,y)
 
 isNegative::Coords -> Bool
 isNegative (Coords x y) = x < 0 || y < 0
+
+up::Coords->Coords
+up (Coords x y) = Coords x (y-1)
+
+down::Coords->Coords
+down (Coords x y) = Coords x (y+1)
+
+left::Coords->Coords
+left (Coords x y) = Coords (x-1) y
+
+right::Coords->Coords
+right (Coords x y) = Coords (x+1) y

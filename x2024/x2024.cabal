@@ -53,6 +53,8 @@ executable x2024-exe
       X1.FormatList
       X1.SortAndDistance
       X1.X1Main
+      X10.X10Main
+      X10.X10PathTrails
       X2.ReportAnalysis
       X2.X2Main
       X3.RegexSolver
